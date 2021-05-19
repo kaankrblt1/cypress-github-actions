@@ -30,13 +30,4 @@ context('Actions', () => {
       .type('disabled error checking', { force: true })
       .should('have.value', 'disabled error checking')
   })
-
-  it('.focus() - focus on a DOM element', () => {
-    // https://on.cypress.io/focus
-    cy.visit('/actions')
-    cy.get('.action-focus').focus()
-      .should('have.class', 'focus')
-      .prev().should('have.attr', 'style', 'color: orange;')
-  })
-
 })
