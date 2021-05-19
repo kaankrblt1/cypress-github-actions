@@ -14,5 +14,4 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        with:
-          start: yarn e2e
+        run: yarn e2e
