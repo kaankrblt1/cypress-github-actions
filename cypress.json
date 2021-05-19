@@ -1,5 +1,6 @@
 { 
-    "baseUrl": "https://example.cypress.io/commands"
+    "baseUrl": "https://example.cypress.io/commands",
+    "firstRun": true
 }
     
    

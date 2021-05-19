@@ -18,3 +18,13 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach(function() {
+    if (Cypress.config("firstRun")) {
+      Cypress.config("firstRun", false);
+    }
+  });
+  
+  afterEach(function() {
+    Cypress.config("firstRun", true);
+  });
